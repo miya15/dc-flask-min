@@ -1,0 +1,10 @@
+version: '3.3'
+
+services:
+  webapi:
+    build: ./flask
+    ports:
+      - "5001:5001"
+    volumes:
+      - ./app:/app
+    restart: always
